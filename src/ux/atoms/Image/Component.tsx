@@ -18,11 +18,11 @@ export const Image = React.forwardRef<HTMLImageElement, Props & IProps>((props, 
   const [loading, setLoading] = React.useState<boolean>(true);
 
   let { src } = props;
-  if (window.location.host === "onkelhoy.github.io") {
-    let slash = src[0] === '/' ? '' : '/';
-    src = `/officina_alimentare_atomic${slash}${src}`
-    console.log({ slash, src });
-  }
+  // if (window.location.host === "onkelhoy.github.io") {
+  //   let slash = src[0] === '/' ? '' : '/';
+  //   src = `/officina_alimentare_atomic${slash}${src}`
+  //   console.log({ slash, src });
+  // }
 
   const image = new window.Image();
   image.src = src;
