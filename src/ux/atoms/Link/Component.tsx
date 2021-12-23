@@ -15,6 +15,13 @@ export interface Props extends IProps {
 export const Link: React.FC<Props> = (props) => {
   const classes = useStyles(props);
 
+  if (window.location.host === "onkelhoy.github.io") {
+    if (props.href.startsWith("assets") || props.href.startsWith("/assets")) {
+      let slash = props.href[0] === '/' ? '' : '/';
+      props.href = `/officina-alimentare${slash}${props.href}`
+    }
+  }
+
   return (
     <a 
       style={props.style}
