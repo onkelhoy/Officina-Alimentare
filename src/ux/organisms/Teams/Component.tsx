@@ -24,7 +24,7 @@ export const Teams: React.FC = props => {
     {
       name: t("team.members.0.name"),
       image: {
-        src: "/assets/images/team/Diego.svg",
+        src: "/assets/images/team/Diego.jpg",
         alt: t("team.members.0.alt"),
       },
       role: t("team.members.0.role"),
@@ -33,7 +33,7 @@ export const Teams: React.FC = props => {
     {
       name: t("team.members.1.name"),
       image: {
-        src: "/assets/images/team/Biagio.svg",
+        src: "/assets/images/team/Biagio.jpg",
         alt: t("team.members.1.alt"),
       },
       role: t("team.members.1.role"),

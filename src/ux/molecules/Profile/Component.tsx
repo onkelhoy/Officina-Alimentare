@@ -8,6 +8,7 @@ import { Color } from 'utils/Enums';
 import { Typography } from 'ux/atoms/Typography';
 import { Image } from 'ux/atoms/Image';
 import { Link } from 'ux/atoms/Link';
+import { Flex } from 'ux/atoms/Flex';
 
 export interface Props {
   image: {
@@ -24,7 +25,9 @@ export const Profile: React.FC<Props> = props => {
   
   return (
     <div>
-      <Image {...props.image} height={150} />
+      <Flex className={classes.flex} justifyContent="center">
+        <Image {...props.image} />
+      </Flex>
       <Typography variant="subheader" align="center">{props.name}</Typography>
       <Typography align="center">{props.role}</Typography>
       <Typography align="center">
@@ -37,10 +40,17 @@ export const Profile: React.FC<Props> = props => {
 }
 
 // types & interfaces
-type RuleName = 'linkedin';
+type RuleName = 'linkedin' | 'flex';
 
 // css design
 const useStyles = createUseStyles<RuleName, Props, unknown>({
+  flex: {
+    height: 170,
+
+    '& img': {
+      width: 'auto'
+    }
+  },
   linkedin: {
     '& svg': {
       color: Color.Linkedin,
