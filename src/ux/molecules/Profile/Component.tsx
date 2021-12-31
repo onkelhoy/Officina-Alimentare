@@ -24,9 +24,11 @@ export const Profile: React.FC<Props> = props => {
   const classes = useStyles(props);
   
   return (
-    <div>
+    <div style={{ width: '100%' }}>
       <Flex className={classes.flex} justifyContent="center">
-        <Image {...props.image} />
+        <div>
+          <Image {...props.image} />
+        </div>
       </Flex>
       <Typography variant="subheader" align="center">{props.name}</Typography>
       <Typography align="center">{props.role}</Typography>
@@ -45,10 +47,13 @@ type RuleName = 'linkedin' | 'flex';
 // css design
 const useStyles = createUseStyles<RuleName, Props, unknown>({
   flex: {
-    height: 170,
+    // height: 170,
+    // width: '100%',
+    // overflow: 'hidden',
+    maxHeight: 200,
 
     '& img': {
-      width: 'auto'
+      maxWidth: 200
     }
   },
   linkedin: {

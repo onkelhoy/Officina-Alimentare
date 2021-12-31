@@ -91,7 +91,7 @@ type GapType = string | number;
 function FromTo(props: Props, type: RC, mode: FT, unit: Units): number | undefined {
   let rowsplit = (props[type] as RowColSplit);
   if ((props[type] as IRCM)?.default) {
-    rowsplit = ((props[type] as IRCM)[unit] as RowColSplit);
+    rowsplit = ((props[type] as IRCM)[unit] as RowColSplit) || (props[type] as IRCM)?.default;
   }
 
   if (!rowsplit) return undefined;
