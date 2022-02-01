@@ -88,6 +88,7 @@ const names = [
   "Programma Tutti nello stesso piatto",
   "Quotidiano Sikkim (India)",
   "Seminario Univ Udine",
+  "Locandina-corso Pest control 29.11.2021",
 ];
 
 // interfaces 
