@@ -37,7 +37,7 @@
   },
   "team": {
     "title": "Su di noi",
-    "description": "Siamo un gruppo di professionisti che hanno ricoperto importanti ruoli tecnici e manageriali nell’industria alimentare. Abbiamo lavorato principalmente nei settori lattiero caseario, delle conserve vegetali e delle bevande, dei gelati, dei prodotti da forno e nella formulazione di vari altri prodotti funzionali.",
+    "description": "Siamo dei professionisti che hanno ricoperto importanti ruoli tecnici e manageriali nell’industria alimentare. Abbiamo lavorato principalmente nei settori lattiero caseario, delle conserve vegetali e delle bevande, dei gelati, dei prodotti da forno e nella formulazione di vari altri prodotti funzionali.",
     "members": [
       {
         "image": "/assets/images/team/Diego.svg",
@@ -101,7 +101,7 @@
     "copyright": "© 2022 Officina Alimentare. Tutti i diritti riservati.",
     "leonardocite": "Quelli che s’innamoran di pratica senza Scienza, son come il nocchiere che entra in naviglio senza timone o bussola, che mai ha certezza dove si vada. (Leonardo, Codice G.F. 8v.)",
     "title": "Officina Alimentare",
-    "texts": ["Studio Professionale Associato", "P. IVA 05122760282"],
+    "texts": ["Professionisti Associati", "P. IVA 05122760282"],
     "contact": "Contatti",
 
     "tel": {
